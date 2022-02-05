@@ -10,6 +10,12 @@ function OnChange(input)
 
 input.addEventListener("change",refresh);
 }
+function OnMouseMove(input)
+{
+
+input.addEventListener("mousemove",refresh);
+}
     inputs.forEach(OnChange);
-    //inputs.forEach(input => input.addEventListener('mousemove', handleUpdate));
+    inputs.forEach(OnMouseMove);
+    
   
